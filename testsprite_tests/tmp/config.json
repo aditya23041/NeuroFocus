@@ -1,0 +1,17 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "study monitor 4.0",
+    "projectPath": "c:\\Users\\adity\\OneDrive\\Desktop\\study monitor 4.0",
+    "testIds": [],
+    "additionalInstruction": "",
+    "serverMode": "development",
+    "envs": {
+      "API_KEY": "sk-user-Hx9D9Jv_T8T9NC3HmsDbcU7jMfOZGJZkkUWTqQUVEsIM15-dBNJi1czSlf7OvuRGsUeeLGZRh4gLAMkwhefyaIBnC74zAP_WBOkhYClHgELI_d-b6ePFQOgJpCAJx3nmmWM"
+    }
+  },
+  "serverPort": 57442
+}

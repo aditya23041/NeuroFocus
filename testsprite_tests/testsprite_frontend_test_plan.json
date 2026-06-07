@@ -1,0 +1,740 @@
+[
+  {
+    "id": "TC001",
+    "title": "View and save a live monitoring session",
+    "description": "This verifies that a user can pause, resume, and end a live session and save it to the dashboard history.",
+    "category": "Live AI Monitor",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /monitor"
+      },
+      {
+        "type": "action",
+        "description": "Pause the session timer"
+      },
+      {
+        "type": "action",
+        "description": "Resume the session timer"
+      },
+      {
+        "type": "action",
+        "description": "End and save the session"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the dashboard is shown"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the saved session appears in recent history"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC002",
+    "title": "Start a session from setup with a chosen focus mode",
+    "description": "This verifies that a user can configure a study session on setup and start monitoring with the selected mode, goal, and duration.",
+    "category": "Session Setup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /setup"
+      },
+      {
+        "type": "action",
+        "description": "Select a focus mode"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the primary study goal field with a study goal"
+      },
+      {
+        "type": "action",
+        "description": "Adjust the session duration to a valid value"
+      },
+      {
+        "type": "action",
+        "description": "Start the session"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the live monitor page is shown"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the session configuration is reflected in the live session"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC003",
+    "title": "Review dashboard summary and weekly performance trends",
+    "description": "This verifies that a user can open the dashboard and review summary metrics, weekly trends, and distraction breakdowns from saved sessions.",
+    "category": "Analytics Dashboard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify summary metrics are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the weekly focus trend and distraction breakdown are displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC004",
+    "title": "Set up a deep work session and begin monitoring",
+    "description": "This verifies that a user can create a Deep Work session from setup and enter the live monitor successfully.",
+    "category": "Session Setup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /setup"
+      },
+      {
+        "type": "action",
+        "description": "Select the Deep Work focus mode"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the primary study goal field with a study goal"
+      },
+      {
+        "type": "action",
+        "description": "Adjust the session duration to a valid value"
+      },
+      {
+        "type": "action",
+        "description": "Start the session"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the live monitor page is shown"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the selected focus mode is reflected in the live session"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC005",
+    "title": "Set up a custom session and begin monitoring",
+    "description": "This verifies that a user can create a Custom session from setup and proceed to live monitoring.",
+    "category": "Session Setup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /setup"
+      },
+      {
+        "type": "action",
+        "description": "Select the Custom focus mode"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the primary study goal field with a study goal"
+      },
+      {
+        "type": "action",
+        "description": "Adjust the session duration to a valid value"
+      },
+      {
+        "type": "action",
+        "description": "Start the session"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the live monitor page is shown"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the session is ready to monitor"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC006",
+    "title": "Open the AI productivity report from the dashboard",
+    "description": "Verify that a user can open the AI productivity report modal from the dashboard and see performance analysis content.",
+    "category": "AI Productivity Report Modal",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the control to open the AI productivity report"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the AI productivity report modal is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify performance analysis content is displayed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC007",
+    "title": "Open and close the AI productivity report",
+    "description": "This verifies that a user can open the AI report modal, review insights, and close it again from the dashboard.",
+    "category": "Analytics Dashboard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Open the AI productivity report"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the AI report modal is visible"
+      },
+      {
+        "type": "action",
+        "description": "Close the AI report modal"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the AI report modal is no longer visible"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC008",
+    "title": "Blur and reveal the monitor feed during a session",
+    "description": "This verifies that a user can toggle privacy mode while monitoring and see the feed state change accordingly.",
+    "category": "Live AI Monitor",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /monitor"
+      },
+      {
+        "type": "action",
+        "description": "Enable privacy blur"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the feed is blurred"
+      },
+      {
+        "type": "action",
+        "description": "Disable privacy blur"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the feed is revealed"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC009",
+    "title": "Browse recent sessions and filter them by category",
+    "description": "This verifies that a user can switch between recent session filters and see the history update accordingly.",
+    "category": "Analytics Dashboard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Select the Work sessions filter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the recent sessions list is filtered"
+      },
+      {
+        "type": "action",
+        "description": "Select the Study sessions filter"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the recent sessions list updates to the selected category"
+      }
+    ],
+    "priority": "High"
+  },
+  {
+    "id": "TC010",
+    "title": "View unlocked and locked achievements on the dashboard",
+    "description": "This verifies that a user can review achievement badges and see which ones are unlocked or still locked.",
+    "category": "Analytics Dashboard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify achievement badges are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify both unlocked and locked achievements are shown"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC011",
+    "title": "View unlocked achievement badges on the dashboard",
+    "description": "Verify that the dashboard shows unlocked achievement badges with colored icons for a user with saved study activity.",
+    "category": "Achievement Badges",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify unlocked achievement badges are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify badge icons are shown for unlocked achievements"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC012",
+    "title": "Set a reminder interval during a live session",
+    "description": "This verifies that a user can configure a reminder interval while monitoring and confirm the setting is applied.",
+    "category": "Live AI Monitor",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /monitor"
+      },
+      {
+        "type": "action",
+        "description": "Open the reminder interval control"
+      },
+      {
+        "type": "action",
+        "description": "Select a reminder interval"
+      },
+      {
+        "type": "action",
+        "description": "Confirm the reminder interval"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the reminder setting is displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the reminder interval is active"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC013",
+    "title": "Review study recommendations in the AI report",
+    "description": "Verify that the AI productivity report shows personalized recommendations after opening the modal.",
+    "category": "AI Productivity Report Modal",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the control to open the AI productivity report"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify personalized study recommendations are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC014",
+    "title": "Calibrate the camera before starting a session",
+    "description": "This verifies that a user can start and stop camera calibration from setup before launching a session.",
+    "category": "Session Setup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /setup"
+      },
+      {
+        "type": "action",
+        "description": "Start camera calibration"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the camera preview is displayed"
+      },
+      {
+        "type": "action",
+        "description": "Stop camera calibration"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the camera preview is no longer displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC015",
+    "title": "Export study history as CSV",
+    "description": "This verifies that a user can export their session history in CSV format from the dashboard.",
+    "category": "Analytics Dashboard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Export the session history as CSV"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the export action is initiated"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the dashboard remains available"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC016",
+    "title": "Compare unlocked and locked achievement badges",
+    "description": "Verify that the dashboard distinguishes unlocked achievement badges from locked greyed-out badges.",
+    "category": "Achievement Badges",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify unlocked achievement badges are displayed"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify locked achievement badges are displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC017",
+    "title": "Export study history as PDF",
+    "description": "This verifies that a user can start the PDF-style export flow from the dashboard for offline reporting.",
+    "category": "Analytics Dashboard",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Export the session history as PDF"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the print flow is initiated"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the dashboard remains available"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC018",
+    "title": "Trigger and dismiss a face distraction alert",
+    "description": "This verifies that a user can simulate a face distraction and dismiss the resulting alert while monitoring.",
+    "category": "Live AI Monitor",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /monitor"
+      },
+      {
+        "type": "action",
+        "description": "Use the simulator override to trigger a face distraction"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a face distraction alert is visible"
+      },
+      {
+        "type": "action",
+        "description": "Dismiss the alert"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the alert is no longer visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC019",
+    "title": "Read distraction breakdown in the AI report",
+    "description": "Verify that the AI productivity report displays distraction source breakdown details for review.",
+    "category": "AI Productivity Report Modal",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the control to open the AI productivity report"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify distraction source breakdown is displayed"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC020",
+    "title": "Trigger and dismiss a phone distraction alert",
+    "description": "This verifies that a user can simulate a phone distraction and dismiss the resulting alert while monitoring.",
+    "category": "Live AI Monitor",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /monitor"
+      },
+      {
+        "type": "action",
+        "description": "Use the simulator override to trigger a phone distraction"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a phone distraction alert is visible"
+      },
+      {
+        "type": "action",
+        "description": "Dismiss the alert"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the alert is no longer visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC021",
+    "title": "Trigger and dismiss a tab distraction alert",
+    "description": "This verifies that a user can simulate a tab switch distraction and dismiss the resulting alert while monitoring.",
+    "category": "Live AI Monitor",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /monitor"
+      },
+      {
+        "type": "action",
+        "description": "Use the simulator override to trigger a tab distraction"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a tab distraction alert is visible"
+      },
+      {
+        "type": "action",
+        "description": "Dismiss the alert"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the alert is no longer visible"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC022",
+    "title": "Print the AI productivity report",
+    "description": "Verify that a user can trigger printing from the AI productivity report modal.",
+    "category": "AI Productivity Report Modal",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /"
+      },
+      {
+        "type": "action",
+        "description": "Click the control to open the AI productivity report"
+      },
+      {
+        "type": "action",
+        "description": "Click the control to print the report"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the report remains available in the modal after print is triggered"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC023",
+    "title": "Reset a live session back to its initial state",
+    "description": "This verifies that a user can reset the live session timer and stats during monitoring.",
+    "category": "Live AI Monitor",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /monitor"
+      },
+      {
+        "type": "action",
+        "description": "Reset the session"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the timer returns to its starting state"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the session stats are reset"
+      }
+    ],
+    "priority": "Medium"
+  },
+  {
+    "id": "TC024",
+    "title": "Prevent starting a session without a study goal",
+    "description": "This verifies that the setup form blocks session start until a study goal is provided.",
+    "category": "Session Setup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /setup"
+      },
+      {
+        "type": "action",
+        "description": "Select a focus mode"
+      },
+      {
+        "type": "action",
+        "description": "Adjust the session duration to a valid value"
+      },
+      {
+        "type": "action",
+        "description": "Start the session"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify a validation error for the missing study goal is visible"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the live monitor page is not shown"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC025",
+    "title": "Use the minimum session duration boundary",
+    "description": "This verifies that a user can set the shortest allowed session duration and start monitoring successfully.",
+    "category": "Session Setup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /setup"
+      },
+      {
+        "type": "action",
+        "description": "Select a focus mode"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the primary study goal field with a study goal"
+      },
+      {
+        "type": "action",
+        "description": "Adjust the session duration to the minimum allowed value"
+      },
+      {
+        "type": "action",
+        "description": "Start the session"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the live monitor page is shown"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the chosen duration is reflected in the live session"
+      }
+    ],
+    "priority": "Low"
+  },
+  {
+    "id": "TC026",
+    "title": "Use the maximum session duration boundary",
+    "description": "This verifies that a user can set the longest allowed session duration and start monitoring successfully.",
+    "category": "Session Setup",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to /setup"
+      },
+      {
+        "type": "action",
+        "description": "Select a focus mode"
+      },
+      {
+        "type": "action",
+        "description": "Fill in the primary study goal field with a study goal"
+      },
+      {
+        "type": "action",
+        "description": "Adjust the session duration to the maximum allowed value"
+      },
+      {
+        "type": "action",
+        "description": "Start the session"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the live monitor page is shown"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the chosen duration is reflected in the live session"
+      }
+    ],
+    "priority": "Low"
+  }
+]
